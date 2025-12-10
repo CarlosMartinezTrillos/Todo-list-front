@@ -1,12 +1,80 @@
-# React + Vite
+[README_FRONTEND.md](https://github.com/user-attachments/files/24083237/README_FRONTEND.md)
+# Todo App Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el frontend de la aplicación Todo App, una aplicación de gestión de tareas con funcionalidades completas de creación, edición, eliminación y filtrado de tareas. La interfaz está desarrollada en React y consume un backend construido en FastAPI.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Crear nuevas tareas
+- Editar tareas existentes
+- Eliminar tareas
+- Panel de notas con editor Markdown
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Vite
+- JavaScript
+- CSS
+- Axios para las peticiones HTTP
+- React Router para navegación
+- Editor Markdown personalizado
+
+## Estructura del proyecto
+
+```
+src/
+ ├── assets/
+ ├── components/      Componentes reutilizables
+ ├── pages/           Vistas principales
+ ├── css/          Archivos CSS globales
+ ├── utils/ 
+ └── main.jsx         Punto de entrada
+```
+
+## Requisitos previos
+
+Antes de ejecutar este proyecto, asegúrate de tener instalado:
+
+- Node.js 18 o superior
+- npm o yarn
+
+## Instalación
+
+1. Clona el repositorio:
+   ```
+   git clone https://github.com/CarlosMartinezTrillos/Todo-list-front.git
+   ```
+
+2. Instala las dependencias:
+   ```
+   npm install
+   ```
+
+3. Crea un archivo `.env` con la URL de tu backend:
+   ```
+   VITE_API_URL=http://localhost:8000
+   ```
+
+## Ejecutar en modo desarrollo
+
+```
+npm run dev
+```
+
+La aplicación quedará disponible en:
+
+```
+http://localhost:5173
+```
+
+## Construcción para producción
+
+```
+npm run build
+```
+
+Esto generará la carpeta `dist`, lista para desplegar en Netlify.
+
+
+Este proyecto se distribuye bajo la licencia MIT.

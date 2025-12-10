@@ -1,0 +1,113 @@
+/* Fondo general y tipografía */
+.dashboard {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem 2rem;
+}
+
+/* Encabezado */
+.dashboard h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #e63946; /* rojo sangre */
+}
+
+/* Contenedor de editor y lista */
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para NoteEditor */
+.note-editor {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.note-editor:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.5);
+}
+
+/* Botones dentro del editor */
+.note-editor button {
+  background-color: #b30000;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.note-editor button:hover {
+  background-color: #800000;
+  transform: scale(1.05);
+}
+
+/* NoteList */
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Cada nota individual */
+.note-card {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.note-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* Título de la nota */
+.note-card h3 {
+  color: #e63946;
+  margin-bottom: 0.5rem;
+}
+
+/* Texto de la nota */
+.note-card p {
+  color: #ccc;
+}
+
+/* Footer si se agrega */
+.dashboard-footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #444;
+  color: #888;
+}
+
+/* Scrollbar oscuro para listas largas */
+.note-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.note-list::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.note-list::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}

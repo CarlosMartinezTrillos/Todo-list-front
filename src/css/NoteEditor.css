@@ -1,0 +1,84 @@
+.note-editor {
+  background: #2b2b2b; /* gris oscuro */
+  border: 1px solid #444;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.note-editor:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+}
+
+.note-editor h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #b30000; /* rojo sangre */
+}
+
+.note-editor textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #555; /* gris medio */
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: monospace;
+  margin-bottom: 0.8rem;
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.note-editor textarea:focus {
+  border-color: #b30000; /* rojo sangre */
+  box-shadow: 0 0 10px rgba(179, 0, 0, 0.5);
+  outline: none;
+  transform: scale(1.02);
+}
+
+.note-editor button {
+  margin-top: 12px;
+  background: #b30000; /* rojo sangre */
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.note-editor button:hover {
+  background: #800000; /* rojo más oscuro */
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(179, 0, 0, 0.4);
+}
+
+.note-editor button:active {
+  transform: scale(0.95);
+}
+
+/* Preview ajustada para que quede más cerca */
+.note-editor .preview {
+  background: #1a1a1a; /* gris oscuro */
+  color: #ccc; /* gris claro para texto */
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.note-editor .preview h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #b30000; /* rojo sangre */
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.3rem;
+}

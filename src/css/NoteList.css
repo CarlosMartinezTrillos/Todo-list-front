@@ -1,0 +1,49 @@
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  /* Animación de entrada */
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Grid estilo tarjetas flotantes */
+.note-list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Animación tipo fade + movimiento hacia arriba */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto “nota flotante” */
+.note-list .note-item {
+  transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+}
+
+.note-list .note-item:hover {
+  transform: translateY(-5px) rotate(-1deg); /* ligero giro para efecto dinámico */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Alternar colores para “efecto notas” tipo post-it */
+.note-list.grid .note-item:nth-child(3n+1) {
+  background-color: #2b2b2b; /* gris oscuro */
+}
+.note-list.grid .note-item:nth-child(3n+2) {
+  background-color: #1f1f1f; /* gris intermedio */
+}
+.note-list.grid .note-item:nth-child(3n+3) {
+  background-color: #292929; /* otro gris oscuro */
+}

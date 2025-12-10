@@ -1,0 +1,127 @@
+/* Animación de entrada */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.login-container {
+  width: 100%;
+  max-width: 450px;     
+  margin: 0 auto;
+  padding: 3rem 2rem;   
+  background: #2b2b2b;       /* gris intermedio */
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeUp 0.7s ease-out; 
+}
+
+.login-container h2 {
+  margin-bottom: 2rem;
+  color: #ffffff;          /* blanco */
+  font-size: 2rem;
+  text-align: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 1rem;         
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #444;    /* gris oscuro */
+  background: #1a1a1a;       /* fondo gris profundo */
+  color: white;
+  font-size: 1.1rem;
+  transition: 
+    border-color 0.3s, 
+    box-shadow 0.3s,
+    transform 0.2s;
+}
+
+.login-container input:focus {
+  border-color: #b30000;      /* rojo sangre */
+  box-shadow: 0 0 10px rgba(179, 0, 0, 0.5);
+  transform: scale(1.02);
+  outline: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #b30000;        /* rojo sangre */
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 
+    background 0.3s, 
+    transform 0.2s,
+    box-shadow 0.3s;
+}
+
+.login-container button:hover {
+  background: #800000;        /* rojo más oscuro */
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(179,0,0,0.4);
+}
+
+.login-container button:active {
+  transform: scale(0.95);
+}
+
+.signup-text {
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  color: #cccccc;            /* gris claro */
+  text-align: center;
+}
+
+.signup-link {
+  color: #b30000;            /* rojo sangre */
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.signup-link:hover {
+  color: #800000;
+  text-shadow: 0 0 6px rgba(179,0,0,0.6);
+}
+.back-home-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #ffffff10; /* Blanco transparente suave */
+  border: 2px solid #ffffff30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: 0.2s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #ffffff25;
+  transform: scale(1.07);
+}
+
+.back-home-btn svg {
+  color: #fff;
+}

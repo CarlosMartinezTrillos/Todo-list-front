@@ -1,0 +1,114 @@
+.note-item {
+  background: #2b2b2b; /* gris oscuro */
+  border: 1px solid #444;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.note-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+}
+
+.note-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #b30000; /* rojo sangre */
+  font-size: 1.1rem;
+}
+
+.note-item textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.7rem;
+  margin-bottom: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: monospace;
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.note-item textarea:focus {
+  border-color: #b30000; /* rojo sangre */
+  box-shadow: 0 0 10px rgba(179, 0, 0, 0.5);
+  outline: none;
+  transform: scale(1.02);
+}
+
+/* Botones encapsulados */
+.note-item-buttons {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note-item-buttons button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Botón principal: rojo sangre */
+.note-item-buttons button:first-of-type {
+  background: #b30000;
+  color: white;
+}
+
+.note-item-buttons button:first-of-type:hover {
+  background: #800000;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(179, 0, 0, 0.4);
+}
+
+/* Botón secundario: gris oscuro */
+.note-item-buttons button:last-of-type {
+  background: #444;
+  color: white;
+}
+
+.note-item-buttons button:last-of-type:hover {
+  background: #666;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.note-item-buttons button:active {
+  transform: scale(0.95);
+}
+
+/* Vista previa */
+.note-item .preview {
+  background: #1a1a1a; /* gris profundo */
+  color: #ccc; /* gris claro para texto */
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.note-item .preview:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.note-item .preview h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: #b30000; /* rojo sangre */
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.2rem;
+}
